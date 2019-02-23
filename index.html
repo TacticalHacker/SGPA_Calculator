@@ -24,7 +24,7 @@
 			m8 = parseFloat(m8.value);
 
 			result.value = parseFloat(((m1 * 4) + (m2 * 4) + (m3 * 4) + (m4 * 3) + (m5 * 3) + (m6 * 2) + (m7 * 2) + (m8 * 5)) /
-				27).toFixed(2);
+				27);
 		}
 	</script>
 </head>
@@ -34,8 +34,6 @@
 	<div class="sqpa1">
 		<div class="container-sqpa1">
 			<div class="sqpa1-pic js-tilt" data-tilt>
-				<label> <b>Your 7th Semester SGPA is : </b> </label>
-				<input class="input1" type="text" id="result" readonly="" />
 			</div>
 
 			<div class="sqpa1-form">
@@ -50,7 +48,10 @@
 				<input class="input1" type="number" id="m6" placeholder="Enter Lab 1 subject mark" /><br>
 				<input class="input1" type="number" id="m7" placeholder="Enter Lab 2 subject mark" /><br>
 				<input class="input1" type="number" id="m8" placeholder="Enter Project marks" /><br>
-				<button class="sqpa1-form-btn" onclick="calcullateSGPA()"> Calculate SGPA </button>
+				<button style=" margin: 0 auto;width: 70%;display: block;" class="sqpa1-form-btn" onclick="calcullateSGPA()">Calculate
+					SGPA </button> <br>
+				<input class="input1" style="  margin: 0 auto;
+				width: 35%;" type="text" id="result" readonly="" />
 				<br>
 
 				<br>

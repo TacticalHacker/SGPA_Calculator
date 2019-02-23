@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>SGPA Calculator</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="vendor/bootstrap/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="vendor/animate/animate.css">
+	<link rel="stylesheet" type="text/css" href="vendor/css-hamburgers/hamburgers.min.css">
+	<link rel="stylesheet" type="text/css" href="vendor/select2/select2.min.css">
+	<link rel="stylesheet" type="text/css" href="css/util.css">
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+	<script type="text/javascript">
+		function calcullateSGPA() {
+			m1 = parseFloat(m1.value);
+			m2 = parseFloat(m2.value);
+			m3 = parseFloat(m3.value);
+			m4 = parseFloat(m4.value);
+			m5 = parseFloat(m5.value);
+			m6 = parseFloat(m6.value);
+			m7 = parseFloat(m7.value);
+			m8 = parseFloat(m8.value);
+
+			result.value = parseFloat(((m1 * 4) + (m2 * 4) + (m3 * 4) + (m4 * 3) + (m5 * 3) + (m6 * 2) + (m7 * 2) + (m8 * 5)) /
+				27);
+		}
+	</script>
+</head>
+
+<body>
+
+	<div class="sqpa1">
+		<div class="container-sqpa1">
+			<div class="sqpa1-pic js-tilt" data-tilt>
+				<label> <b>Your 7th Semester SGPA is : </b> </label>
+				<input class="input1" type="text" id="result" readonly="" />
+			</div>
+
+			<div class="sqpa1-form">
+				<span class="sqpa1-form-title">
+					Enter Your Marks here . . .
+				</span>
+				<input class="input1" type="number" id="m1" placeholder="Enter credit 4 subject mark" /><br>
+				<input class="input1" type="number" id="m2" placeholder="Enter credit 4 subject mark" /><br>
+				<input class="input1" type="number" id="m3" placeholder="Enter credit 4 subject mark" /><br>
+				<input class="input1" type="number" id="m4" placeholder="Enter credit 3 subject mark" /><br>
+				<input class="input1" type="number" id="m5" placeholder="Enter credit 3 subject mark" /><br>
+				<input class="input1" type="number" id="m6" placeholder="Enter Lab 1 subject mark" /><br>
+				<input class="input1" type="number" id="m7" placeholder="Enter Lab 2 subject mark" /><br>
+				<input class="input1" type="number" id="m8" placeholder="Enter Project marks" /><br>
+				<button class="sqpa1-form-btn" onclick="calcullateSGPA()"> Calculate SGPA </button>
+				<br>
+
+				<br>
+			</div>
+		</div>
+	</div>
+	<script src="vendor/jquery/jquery-3.2.1.min.js"></script>
+	<script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+</body>
+
+</html>

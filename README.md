@@ -1,2 +1,2 @@
 # SGPA_Calculator
-SGPA Calculator for 8th Semester VTU students
+SGPA Calculator for 7th Semester Results (CBCS Scheme)

@@ -1,5 +1,5 @@
 # SGPA_Calculator
-SGPA Calculator for 7th Semester Results (CBCS Scheme)
+SGPA Calculator for 7th Semester Results (CBCS Scheme).
 
 # Use the following table to enter the Grade Points corresponding to your Letter Grades.
 
